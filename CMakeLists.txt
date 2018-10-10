@@ -4,4 +4,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0.0)
 
 project(NvccWrapper)
 
-configure_file(nvcc_wrapper ${CMAKE_INSTALL_PREFIX}/etc/nvcc_wrapper @ONLY)
+configure_file(nvcc_wrapper ${CMAKE_BINARY_DIR}/nvcc_wrapper @ONLY)
+
+install( FILES ${CMAKE_BINARY_DIR}/nvcc_wrapper DESTINATION ${CMAKE_INSTALL_PREFIX}/etc )
