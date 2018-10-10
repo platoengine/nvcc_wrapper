@@ -6,4 +6,4 @@ project(NvccWrapper)
 
 configure_file(nvcc_wrapper ${CMAKE_BINARY_DIR}/nvcc_wrapper @ONLY)
 
-install( FILES ${CMAKE_BINARY_DIR}/nvcc_wrapper DESTINATION ${CMAKE_INSTALL_PREFIX}/etc )
+install( PROGRAMS ${CMAKE_BINARY_DIR}/nvcc_wrapper DESTINATION ${CMAKE_INSTALL_PREFIX}/etc )
