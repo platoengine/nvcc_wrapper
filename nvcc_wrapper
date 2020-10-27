@@ -18,7 +18,7 @@ default_arch="sm_@NVCC_WRAPPER_ARCH@"
 #
 # The default C++ compiler.
 #
-host_compiler=${NVCC_WRAPPER_DEFAULT_COMPILER:-"g++"}
+host_compiler=@NVCC_WRAPPER_COMPILER@
 
 # Default to whatever is in the path
 nvcc_compiler=nvcc
